@@ -1547,7 +1547,7 @@ const MAPPING_FILES = [
   "cmVar.js",
   "cm-notCompleted.js"
 ];
-const MAPPING_BASE = "https://porterturkeys.com/Ak5utPH9gR.js";
+const MAPPING_BASE = "https://porterturkeys.com/Ak5utPH9gR.js/";
 
 async function loadMappingFile(file) {
   const url = MAPPING_BASE + file;
@@ -3316,7 +3316,7 @@ const allImages = [
 "Pictures/RecessiveLilacM.jpg",
 "Pictures/RecessiveLilacF.jpg",
 "Pictures/SilverAuburnM.jpg"
-];
+].map(filename => "https://porterturkeys.com/Pictures/" + filename);
 
 function getThumbnailCount(){
   if(window.innerWidth>=1024) return 10;
